@@ -1,0 +1,87 @@
+body{
+    background-color: rgb(255, 204, 153);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+    background-color: rgb(255, 204, 153);
+}
+.map{
+    width: 60%;
+}
+@media (max-width: 480px) {
+    main {
+        height: 500px;
+    }
+  }
+
+  .score{
+    background-color: rgb(94, 87, 70);
+    border-radius: 10px;
+    border: 2px;
+    height: auto;
+  }
+
+.score .player{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20px;
+}
+
+button{
+    border-radius: 20px;
+    border: 0;
+    width: auto;
+    padding-inline: 10px;
+    background-color: rgb(255, 204, 153);
+    color: rgb(94, 87, 70);
+    margin-inline: 2px;
+}
+
+h6{
+    display: flex;
+    font-size: small;
+    color: rgb(255, 204, 153);
+    width: 10px;
+    justify-content: center;
+}
+
+.name{
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    background-image: url("images/background.png");
+    background-size: contain;
+}
+
+footer h5{
+    color: rgb(74, 25, 44);;
+}
+
+.icon img{
+    margin-top: -160px;
+    width: 200px;
+}
+@media (max-width: 480px) {
+    .icon img{
+        margin-top: -100px;
+        width: 150px;
+    }
+  }
