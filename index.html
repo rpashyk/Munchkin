@@ -6,26 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Munchkin</title>
     <link rel="stylesheet" href="style.css">
-
+    
+   
 </head>
 
 <body style="overflow-x: hidden;">
     <main>
-        <div class="map">
-
-        </div>
         <div id="score" class="score">
-            <button class="addPlayer" id="addPlayer">Add player</button>
-            <div id="player1" class="player">
-                <button class="death" id="death1">Dead</button>
-                <button id="plus1">+</button>
-                <h6 id="count1">0</h6>
-                <button id="minus1">-</button>
-                <h6 id="name1" class="name">Name1</h6>
-                <button id="delete1">x</button>
+            <div>
+                <button class="color" id="addyellow"></button>
+                <div id="player1" class="player">
+                    <button class="death" id="death1">Dead</button>
+                    <button class="plus" id="plus1">+</button>
+                    <h6 id="count1">0</h6>
+                    <button class="minus" id="minus1">-</button>
+                    <h6 class="name" id="name1">Name1</h6>
+                    <button class="delete" id="delete1">x</button>
+                </div>
+            </div>
+            <div>
+                <button class="color" id="addred"></button>
+                <div id="player2" class="player">
+                    <button class="death" id="death2">Dead</button>
+                    <button class="plus" id="plus2">+</button>
+                    <h6 id="count2">0</h6>
+                    <button class="minus" id="minus2">-</button>
+                    <h6 class="name" id="name2">Name2</h6>
+                    <button class="delete" id="delete2">x</button>
+                </div>    
+            </div>
+            <div>
+                <button class="color" id="addblue"></button>
+                <div id="player3" class="player">
+                    <button class="death" id="death3">Dead</button>
+                    <button class="plus" id="plus3">+</button>
+                    <h6 id="count3">0</h6>
+                    <button class="minus" id="minus3">-</button>
+                    <h6 class="name" id="name3">Name3</h6>
+                    <button class="delete" id="delete3">x</button>
+                </div>
+            </div>
+            <div>
+                <button class="color" id="addgreen"></button>
+                <div id="player4" class="player">
+                    <button class="death" id="death4">Dead</button>
+                    <button class="plus" id="plus4">+</button>
+                    <h6 id="count4">0</h6>
+                    <button class="minus" id="minus4">-</button>
+                    <h6 class="name" id="name4">Name4</h6>
+                    <button class="delete" id="delete4">x</button>
+                </div>
+            </div>
+            <div>
+                <button class="color" id="addpurple"></button>
+                <div id="player5" class="player">
+                    <button class="death" id="death5">Dead</button>
+                    <button class="plus" id="plus5">+</button>
+                    <h6 id="count5">0</h6>
+                    <button class="minus" id="minus5">-</button>
+                    <h6 class="name" id="name5">Name5</h6>
+                    <button class="delete" id="delete5">x</button>
+                </div>
+            </div>
+            <div>
+                <button class="color" id="addorange"></button>
+                <div id="player6" class="player">
+                    <button class="death" id="death6">Dead</button>
+                    <button class="plus" id="plus6">+</button>
+                    <h6 id="count6">0</h6>
+                    <button class="minus" id="minus6">-</button>
+                    <h6 class="name" id="name6">Name6</h6>
+                    <button class="delete" id="delete6">x</button>
+                </div>
+            </div>    
+        </div>
+        <div class="map">
+            <div id="lvl1">
+                <img class="dragElement ui-widget ui-corner-all ui-state-error" 
+                    id="yellow1" src="images/yellow_munchkin.jpg">
+                <img class="dragElement ui-widget ui-corner-all ui-state-error" 
+                    id="blue1" src="images/blue_munchkin.jpg">
+                <img class="dragElement ui-widget ui-corner-all ui-state-error" 
+                    id="purple1" src="images/purple_munchkin.jpg">
+                <img class="dragElement ui-widget ui-corner-all ui-state-error" 
+                    id="red1" src="images/red_munchkin.jpg">
+                <img class="dragElement ui-widget ui-corner-all ui-state-error" 
+                    id="orange1" src="images/orange_munchkin.jpg">
+                <img class="dragElement ui-widget ui-corner-all ui-state-error" 
+                    id="green1" src="images/green_munchkin.jpg">
+            </div>
+           <div id="lvl2">
+                
+            </div>
+            <div id="lvl3">
+                
+            </div>
+            <div id="lvl4">
+                
+            </div>
+            <div id="lvl5">
+                
+            </div>
+            <div id="lvl6">
+                
+            </div>
+            <div id="lvl7">
+                
+            </div>
+            <div id="lvl8">
+               
+            </div>
+            <div id="lvl9">
+                
+            </div>
+            <div id="lvl10">
+                
             </div>
         </div>
-    </main> 
+
+    </main>
+    
     <footer>
         <div class="icon">
             <img src="images\icon.png">
@@ -37,7 +137,10 @@
 
         </div>
     </footer>
+    <script src="js/jquery-3.7.1.js"></script>
     <script src="js/score.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+   
 </body>
 
 

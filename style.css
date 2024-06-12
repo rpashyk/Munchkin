@@ -4,26 +4,53 @@ body{
 
 main{
     display: flex;
-    justify-content: center;
-    height: 1000px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
     background-color: rgb(255, 204, 153);
 }
-.map{
-    width: 60%;
-}
-@media (max-width: 480px) {
-    main {
-        height: 500px;
-    }
-  }
 
-  .score{
+.map{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-content: space-around;
+    border-style: dashed;
+}
+
+
+.map div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    border: 5px;
+    border-style: dashed;
+    border-color: rgb(94, 87, 70);
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.map div img{
+    width:60px;
+    height: auto;
+}
+
+.score{
     background-color: rgb(94, 87, 70);
     border-radius: 10px;
     border: 2px;
     height: auto;
-  }
-
+    width:max-content;
+}
+.score > div{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+}
 .score .player{
     display: flex;
     justify-content: space-around;
@@ -40,7 +67,30 @@ button{
     color: rgb(94, 87, 70);
     margin-inline: 2px;
 }
-
+#addyellow{
+    background-color: yellow;
+    height: 20px;
+}
+#addblue{
+    background-color: blue;
+    height: 20px;
+}
+#addpurple{
+    background-color: purple;
+    height: 20px;
+}
+#addred{
+    background-color: red;
+    height: 20px;
+}
+#addorange{
+    background-color: orange;
+    height: 20px;
+}
+#addgreen{
+    background-color: green;
+    height: 20px;
+}
 h6{
     display: flex;
     font-size: small;
@@ -53,6 +103,11 @@ h6{
     width: 100px;
 }
 
+@media (max-width: 480px) {
+    main {
+        height: auto;
+    }
+}
 
 
 
@@ -76,8 +131,8 @@ footer h5{
 }
 
 .icon img{
-    margin-top: -160px;
-    width: 200px;
+    margin-top: -100px;
+    width: 150px;
 }
 @media (max-width: 480px) {
     .icon img{
