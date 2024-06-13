@@ -1,10 +1,10 @@
-$('.plus').click(onClickPlus);
-$('.minus').click(onClickMinus);
-$('.death').click(onClickDeath);
-$('.name').dblclick(onDblClickName);
+jQuery('.plus').click(onClickPlus);
+jQuery('.minus').click(onClickMinus);
+jQuery('.death').click(onClickDeath);
+jQuery('.name').dblclick(onDblClickName);
 // $('.name').touchend(onDblClickName);
-$('.delete').click(onClickDelete);
-$('.color').click(onClickAddPlayer);
+jQuery('.delete').click(onClickDelete);
+jQuery('.color').click(onClickAddPlayer);
 
 //document.getElementById('addPlayer').addEventListener("click", onClickAddPlayer);
 
@@ -52,8 +52,8 @@ function onClickAddPlayer(){
         case 'addpurple': num = 5; break;
         case 'addorange': num = 6; break;
     }
-    $('main #score #player' + num).show();
-    $('main .map #' + this.id.slice(3, this.id.length + 1) + '1').show();
+    jQuery('main #score #player' + num).show();
+    jQuery('main .map #' + this.id.slice(3, this.id.length + 1) + '1').show();
 
 }
 
@@ -71,18 +71,18 @@ function onClickDelete(){
     $('main .map img[id^='+ color +']').css('left', '').css('top', '').hide();
 }
 
-$('main .map img').hide();
-$('#score .player ').hide();
-$(function() {
+jQuery('main .map img').hide();
+jQuery('#score .player ').hide();
+jQuery(function() {
             
-    $('.dragElement').draggable({
+    jQuery('.dragElement').draggable({
         containment: ".map"
     });
     
 });
-$('.map div').css('background-image', function(){
+jQuery('.map div').css('background-image', function(){
     return 'url("images/' + this.id + '.jpg")'
 });
-$('.map div').css('background-size', 'contain');
+jQuery('.map div').css('background-size', 'contain');
 
 //style="background-image: url('images/lvl1.jpg'); background-size: contain;"
