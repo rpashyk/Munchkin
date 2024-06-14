@@ -107,6 +107,16 @@ h6{
     main {
         height: auto;
     }
+     
+    .map div{
+        width: 140px;
+        height: 140px;
+        margin: 10px;
+    }
+
+    .map div img{
+        width: 30%;
+    }
 }
 
 
